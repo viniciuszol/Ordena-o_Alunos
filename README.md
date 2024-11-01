@@ -1,18 +1,19 @@
-## Getting Started
+# Gerenciador de Alunos
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto em Java é uma aplicação que gerencia uma lista de alunos, utilizando a interface `Set` para armazenar os dados. Cada aluno possui atributos como nome, matrícula e nota. A aplicação permite manipular e exibir informações sobre os alunos de forma organizada.
 
-## Folder Structure
+## Funcionalidades
 
-The workspace contains two folders by default, where:
+A classe `GerenciadorAlunos` implementa os seguintes métodos:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- **adicionarAluno(String nome, Long matricula, double media)**: Adiciona um aluno ao conjunto.
+- **removerAluno(long matricula)**: Remove um aluno do conjunto pela matrícula, se estiver presente.
+- **exibirAlunosPorNome()**: Exibe todos os alunos do conjunto em ordem alfabética pelo nome.
+- **exibirAlunosPorNota()**: Exibe todos os alunos do conjunto em ordem crescente de nota.
+- **exibirAlunos()**: Exibe todos os alunos do conjunto.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Tecnologias Utilizadas
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- Java SE
+- Interface `Set` para garantir a unicidade dos alunos.
+- Ferramentas de ordenação para exibir os alunos por nome e por nota.
